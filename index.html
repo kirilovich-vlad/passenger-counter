@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<HTML>
+
+    <HEAD>
+        <META name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+        <TITLE>Passenger counter</TITLE>
+        <LINK href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <LINK rel="stylesheet" type="text/css" href="css/main.css">
+    </HEAD>
+
+    <BODY class="d-flex flex-column min-vh-100">
+
+        <HEADER>
+            <NAV class="navbar navbar-expand-lg bg-dark">
+                <DIV class="container-fluid">
+
+                    <A class="navbar-brand text-white" href="#">Passenger counter</A>
+                    <BUTTON class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <SPAN class="navbar-toggler-icon"></SPAN>
+                    </BUTTON>
+                  
+                    <DIV class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <UL class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <LI class="nav-item">
+                                <A class="nav-link active" style="color:#e9ecef" aria-current="page" href="index.html">Counter page</A>
+                            </LI>
+                            <LI class="nav-item">
+                                <A class="nav-link" style="color:#adb5bd" href="about.html">About</A>
+                            </LI>
+                        </UL>
+                    </DIV>
+
+                </DIV>
+            </NAV>
+        </HEADER>
+
+        <CONTENT>
+        <DIV class="container pb-5 d-lg-none">
+            <DIV class="col">
+                <DIV id="counter" class="row row-12 justify-content-center">0</DIV>
+
+                <DIV class="row row-12 justify-content-around my-3">
+                    <DIV class="col col-6 col-md-4">
+                        <BUTTON type="button" onclick="plus()" class="btn btn-primary btn-lg w-100">Add</BUTTON>
+                    </DIV>
+                    <DIV class="col col-6 col-md-4">
+                        <BUTTON type="button" onclick="minus()" class="btn btn-primary btn-lg w-100">Remove</BUTTON>
+                    </DIV>
+                </DIV>
+
+                <DIV class="row row-12 justify-content-center">
+                    <DIV class="col col-12 col-md-4">
+                        <BUTTON onclick="wipe()" type="button" class="btn btn-outline-danger btn-lg w-100">Wipe the counter</BUTTON>
+                    </DIV>
+                </DIV>
+
+            </DIV>
+        </DIV>
+
+        <DIV class="d-none d-lg-block container pb-5 pt-3">
+            <DIV class="row">
+                <DIV id="counter2" class="col col-4 offset-2">0</DIV>
+            
+                <DIV class="col-6 align-items-center">
+                    <DIV class="row row-12 justify-content-center my-4">
+                        <DIV class="col col-12 col-md-4">
+                            <BUTTON type="button" onclick="plus()" class="btn btn-primary btn-lg w-100">Add</BUTTON>
+                        </DIV>
+                    </DIV>
+                    <DIV class="row row-12 justify-content-center my-4">
+                        <DIV class="col col-12 col-md-4">
+                            <BUTTON type="button" onclick="minus()" class="btn btn-primary btn-lg w-100">Remove</BUTTON>
+                        </DIV>
+                    </DIV>
+                    <DIV class="row row-12 justify-content-center my-4">
+                        <DIV class="col col-12 col-md-4">
+                            <BUTTON onclick="wipe()" type="button" class="btn btn-outline-danger btn-lg w-100">Wipe the counter</BUTTON>
+                        </DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+
+        </CONTENT>
+        
+        <footer class="d-flex flex-wrap justify-content-end align-items-center py-3 px-2 mt-auto border-top bg-dark">
+            <p class="col-md-3 mb-0 text-muted">&copy; Vlad Kirilovich</p>
+          </footer>
+
+        <SCRIPT src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></SCRIPT>
+        <SCRIPT src="js/counter.js"></SCRIPT>
+    </BODY>
+</HTML>
